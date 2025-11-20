@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import WelcomePage from "./pages/welcomePage";
-import InvitationCard from "./components/invitationcard";
+import WelcomePage from "./src/pages/welcomePage";
+import InvitationCard from "./src/components/invitationcard";
 
 function App() {
   return (
