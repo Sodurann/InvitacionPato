@@ -1,0 +1,16 @@
+.invitation-button {
+  background-color: #1B428C;
+  color: #FFF; 
+  border: none;
+  padding: 15px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 5px;
+   font-family: 'Roboto Mono', monospace; 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.invitation-button:hover {
+  transform: scale(1.05);
+} 
