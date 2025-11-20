@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import InvitationCard from '../components/invitationcard';
 
-export const invitationPage = () => {
+ const InvitationPage = () => {
   return (
     <motion.div
       className="invitation-bg"
@@ -14,3 +14,4 @@ export const invitationPage = () => {
     </motion.div>
   );
 };
+export default InvitationPage;
