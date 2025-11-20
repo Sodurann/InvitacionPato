@@ -1,42 +1,88 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Invitacion.css */
+
+/* 1. Definición de Paleta de Colores y Tipografía */
+:root {
+  --azul-principal: #1f5a8f;
+  --crema-fondo: #f2eadf;
+  --amarillo-detalles: #fdd835;
+  /* Elige una fuente bold y redondeada de Google Fonts, por ejemplo: */
+  --fuente-titulo: 'Boogaloo', cursive; 
+}
+
+/* ==================================== */
+/* 2. ESTILOS BASE (MOBILE-FIRST) */
+/* ==================================== */
+
+.invitacion-container {
+  /* Estilo base para el móvil */
+  background-color: #F2EADF;
+  color: #1B428C;
+  padding: 30px 20px;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla del móvil */
+  font-family: var(--fuente-titulo);
+  position: relative;
+  overflow: hidden; /* Para que las formas de fondo no generen scroll */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.titulo-principal {
+  font-size: 3.5em; /* Grande y llamativo */
+  line-height: 0.9;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Estilos para las formas de fondo (simplificados con posicionamiento y border-radius) */
+.forma-azul {
+  position: absolute;
+  background-color: #1B428C;
+  z-index: 0; /* Detrás del contenido */
+}
+
+.forma-superior {
+  top: -150px;
+  left: -50px;
+  width: 150%;
+  height: 400px;
+  border-radius: 0 0 60% 60%; 
+  z-index: 0;
+}
+
+/* Foto Circular y Detalles */
+.seccion-foto {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.foto-circular {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  /* Borde suave alrededor de la foto */
+  box-shadow: 0 0 0 10px #F2EADF; 
+}
+
+.seccion-detalles {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  margin-top: 50px;
+}
+
+.seccion-confirmacion {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+@media (min-width: 600px) {
+  .invitacion-container {
+    max-width: 450px; 
+    margin: 50px auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15); 
+    border-radius: 15px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

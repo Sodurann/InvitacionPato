@@ -1,0 +1,63 @@
+
+.invitation-bg {
+  background-color: #1B428C; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+  font-family: 'Roboto Mono', monospace; 
+  padding: 50px 20px;
+}
+
+.invitation-receipt-card {
+  background-color: #F2EADF;
+  color: #1B428C;
+  padding: 30px;
+  border: 2px solid #1B428C;
+  box-shadow: 10px 10px 0 #1B428C; 
+  width: 100%;
+  max-width: 400px; 
+  z-index: 1;
+  text-align: left; 
+}
+
+.greeting-text {
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+.detail-header {
+  background-color: #1B428C;
+  color:  #F2EADF;
+  padding: 3px 5px;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.detail-content {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #1B428C;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+.rsvp-text {
+  margin-top: 20px;
+  font-size: 0.9em;
+  text-align: center;
+}
+.confirm-button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .invitation-receipt-card {
+    max-width: 500px; 
+    padding: 50px;
+  }
+}
+
